@@ -57,12 +57,8 @@ pip install opencv-python numpy imutils
 4. **Operation**:
    - The script initializes a VideoStream from the default webcam (index 0).
    - Frames are processed, and detections are overlaid with bounding boxes and labels.
-   - Exit by pressing `q` in the display window.
+   - Exit by pressing `q` or `Ctrl + C` in the display window.
 
-## Performance Metrics
-Upon termination, the script outputs:
-- **Elapsed Time**: Total runtime in seconds.
-- **FPS**: Approximate frames per second, dependent on hardware capabilities (CPU/GPU).
 
 ## Technical Notes
 - **Optimization**: Constants like blob size (300x300) and text styling are predefined to minimize runtime overhead.
@@ -77,35 +73,4 @@ This project is a derivative of [Surya-Murali’s Real-Time-Object-Detection-Wit
 - Built with appreciation for the open-source computer vision community.
 
 Explore, modify, and deploy! For issues or contributions, please open a ticket or pull request.
-```
-
----
-
-### Files to Upload
-1. **`live_object_spotter.py`**: Your Python script with the license at the top, as provided earlier.
-2. **`MobileNetSSD_deploy.prototxt`**: The network configuration file you shared.
-3. **`MobileNetSSD_deploy.caffemodel`**: Your 23MB pre-trained model file.
-4. **`README.md`**: The content above.
-
-### Upload Instructions
-1. **Clone or Update Repository**:
-   ```bash
-   git clone https://github.com/jai-nayani/urban-broccoli.git
-   cd urban-broccoli
-   ```
-
-2. **Add Files**:
-   - Ensure all files are in the directory.
-
-3. **Commit and Push**:
-   ```bash
-   git add .
-   git commit -m "Update with all files and README"
-   git push origin main
-   ```
-
-### Test Locally
-Verify the script works:
-```bash
-python3 live_object_spotter.py --prototxt MobileNetSSD_deploy.prototxt --model MobileNetSSD_deploy.caffemodel
 ```
